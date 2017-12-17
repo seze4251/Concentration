@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F83A51C21FE5C81400E377F1 /* Concentration.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83A51C11FE5C81400E377F1 /* Concentration.swift */; };
+		F83A51C41FE5C84C00E377F1 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83A51C31FE5C84C00E377F1 /* Card.swift */; };
 		F8560DC51FE247D100169FFE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8560DC41FE247D100169FFE /* AppDelegate.swift */; };
 		F8560DC71FE247D100169FFE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8560DC61FE247D100169FFE /* ViewController.swift */; };
 		F8560DCA1FE247D100169FFE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8560DC81FE247D100169FFE /* Main.storyboard */; };
@@ -15,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F83A51C11FE5C81400E377F1 /* Concentration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Concentration.swift; sourceTree = "<group>"; };
+		F83A51C31FE5C84C00E377F1 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		F8560DC11FE247D100169FFE /* Concentration.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Concentration.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8560DC41FE247D100169FFE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F8560DC61FE247D100169FFE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -54,6 +58,8 @@
 		F8560DC31FE247D100169FFE /* Concentration */ = {
 			isa = PBXGroup;
 			children = (
+				F83A51C11FE5C81400E377F1 /* Concentration.swift */,
+				F83A51C31FE5C84C00E377F1 /* Card.swift */,
 				F8560DC61FE247D100169FFE /* ViewController.swift */,
 				F8560DC81FE247D100169FFE /* Main.storyboard */,
 				F8560DD61FE2495200169FFE /* Supporting Files */,
@@ -146,6 +152,8 @@
 			files = (
 				F8560DC71FE247D100169FFE /* ViewController.swift in Sources */,
 				F8560DC51FE247D100169FFE /* AppDelegate.swift in Sources */,
+				F83A51C21FE5C81400E377F1 /* Concentration.swift in Sources */,
+				F83A51C41FE5C84C00E377F1 /* Card.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
