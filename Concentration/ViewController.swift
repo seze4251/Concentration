@@ -27,10 +27,35 @@ class ViewController: UIViewController {
         if let cardNumber = cardButtons.index(of: sender) {
             game.chooseCard(at: cardNumber)
             updateViewFromModel()
+            if (game.isFinished()) {
+                // Display Restart Button
+                restartButton.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
+            }
         } else {
             print("Button has not been linked to list")
         }
     }
+    
+    @IBOutlet weak var restartButton: UIButton!
+    
+    @IBAction func playAgain(_ sender: UIButton) {
+        if (!game.isFinished()) {
+            return
+        }
+        
+        game = Concentration(numberOfPairsOfCards: (cardButtons.count + 1) / 2)
+        restartButton.backgroundColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
+        updateViewFromModel()
+        
+        // Put all Emojis back inside emoji choices
+        for (_, value) in emoji {
+            emojiChoices.append(value)
+        }
+        
+        // Clear Emoji Dictonary
+        emoji.removeAll()
+    }
+    
     
     func updateViewFromModel() {
         for index in cardButtons.indices {

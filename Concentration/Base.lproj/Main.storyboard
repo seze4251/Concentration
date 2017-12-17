@@ -173,12 +173,25 @@
                                     <action selector="touchCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Yk7-CB-Zsi"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dIq-12-jiO">
+                                <rect key="frame" x="88" y="467" width="199" height="62"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <state key="normal" title="Play Again">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="playAgain:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FY6-Db-OQo"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="flipCountLabel" destination="ueQ-9G-gjh" id="aRA-RO-s7u"/>
+                        <outlet property="restartButton" destination="dIq-12-jiO" id="UZ7-OE-Hu0"/>
                         <outletCollection property="cardButtons" destination="05a-gt-u7n" collectionClass="NSMutableArray" id="Y5o-Rm-O1v"/>
                         <outletCollection property="cardButtons" destination="avT-Ey-FOw" collectionClass="NSMutableArray" id="DQh-v1-MZv"/>
                         <outletCollection property="cardButtons" destination="GNt-wc-h3o" collectionClass="NSMutableArray" id="ddL-Ar-vL5"/>

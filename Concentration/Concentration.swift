@@ -17,24 +17,30 @@ class Concentration {
             let card = Card()
             cards += [card, card]
         }
-     //   randomizeArray(input: cards)
+        randomizeArray()
     }
     
-/*    func randomizeArray(input array: Array<Card>) {
+    func isFinished() -> Bool {
+        var done = true
+        for iterator in cards.indices {
+            if !cards[iterator].isMatched {
+                done = false
+            }
+        }
+        return done
+    }
+    
+     func randomizeArray() {
         var tempCards = [Card]()
         
         // Initialize a new temporary array
-        for iterator in array.indices {
-            tempCards[iterator] = Card()
+        for _ in cards.indices {
+            let randomIndex = Int(arc4random_uniform(UInt32(cards.count)))
+            print("Length of Cards: \(cards.count), RandomIndex: \(randomIndex)")
+            tempCards.append(cards.remove(at:randomIndex))
         }
-        
-        for old_index in array.indices {
-            while true {
-                let
-            }
-        }
-        
-    }*/
+        cards = tempCards
+    }
     
     func chooseCard(at index: Int) {
         if !cards[index].isMatched {
