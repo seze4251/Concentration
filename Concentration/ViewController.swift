@@ -54,6 +54,9 @@ class ViewController: UIViewController {
         
         // Clear Emoji Dictonary
         emoji.removeAll()
+        
+        // Reset Flipcount
+        flipCount = 0
     }
     
     
