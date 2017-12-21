@@ -12,11 +12,11 @@ struct Card {
    // var isSet = false
     var isFaceUp = false
     var isMatched = false
-    var identifier: Int
+    private(set) var identifier: Int
     
-    static var identifierFactory = 0
+    private static var identifierFactory = 0
     
-    static func getUniqueCardIdentifier()-> Int {
+    private static func getUniqueCardIdentifier()-> Int {
         identifierFactory += 1
         return identifierFactory
     }
